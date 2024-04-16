@@ -80,17 +80,26 @@ console.log(dados)
 
 
 const promessa4 = new Promise(function(resultado, rejeicao){
-    console.log("Promessa 4 ok")
+    setTimeout(()=>{
+        resultado("Promessa 4 ok")
+
+    }, 2000)
 })
 
 const promessa5 = new Promise(function(resultado, rejeicao){
-    console.log("Promessa 5 ok")
+    setTimeout(()=>{
+        resultado("Promessa 5 ok")
+
+    }, 5000)
 })
 
 const promessa6 = new Promise(function(resultado, rejeicao){
-    console.log("Promessa 6 ok")
+    setTimeout(()=>{
+        resultado("Promessa 6 ok")
+
+    }, 500)
 })
 
-const resolveTodasCorridas  = Promise.race([promessa4, promessa5, promessa6]).then(function(dados){
+const resolveTodasCorridas  = Promise.all([promessa4, promessa5, promessa6]).then(function(dados){
 console.log(dados)
 })

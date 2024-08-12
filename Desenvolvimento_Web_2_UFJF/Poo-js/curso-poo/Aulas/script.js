@@ -1,16 +1,27 @@
- var ingredientes = ["mel", "água", "sal", "mostarda" ];
- var vetorModificado = [];
+var ingredientes = ["mel", "água", "sal", "mostarda"];
 
- for (var i = 0; i < ingredientes.length; i++) {
-    var letraInical = ingredientes[i].charAt(0).toUpperCase();
-    var restoDaPalavra = ingredientes[i].slice(1);
-    var palavraToda = letraInical + restoDaPalavra;
+function capitalizar(ingredientes) {
+   var vetorModificado = [];
+
+   for (var i = 0; i < ingredientes.length; i++) {
+      var letraInical = ingredientes[i].charAt(0).toUpperCase();
+      var restoDaPalavra = ingredientes[i].slice(1);
+      var palavraToda = letraInical + restoDaPalavra;
+
+      vetorModificado[i] = palavraToda;
+   }
+return vetorModificado;
+
+}
 
 
-    vetorModificado[i] = palavraToda;
- }
+function ordenar(ingredientes) {
+   return ingredientes.sort(function(a, b) {
+      return a.localeCompare(b);
+   });
+}
+var ingredientesCapitalizados = capitalizar(ingredientes);
+var ingredientesOrdenados = ordenar(ingredientesCapitalizados);
 
- var ordenado = vetorModificado.sort(function(a,b){
-    return a.localeCompare(b);
- });
-console.log(ordenado);
+console.log(ingredientesOrdenados);
+console.log(ingredientesCapitalizados);

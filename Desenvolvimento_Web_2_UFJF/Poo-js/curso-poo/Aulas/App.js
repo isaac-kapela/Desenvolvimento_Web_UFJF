@@ -1,8 +1,10 @@
 import modificador from "./modificador.js";
 import ingredientes from "./ingredientes.js";
 
- console.log(ingredientes);
- console.log(typeof ingredientes);  
+
+modificador.capitalizarNovo(ingredientes, 'nome');
+//  console.log(ingredientes);
+//  console.log(typeof ingredientes);  
 
 
 // var resultadoCapitalizados = modificador.capitalizar(ingredientes);

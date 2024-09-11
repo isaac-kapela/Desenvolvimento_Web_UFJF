@@ -1,0 +1,24 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "main": "em01.js",
+  "scripts": {
+    "em01": "tsc  &&  node  ./dist/em01.js",
+    "em02": "tsc  &&  node  ./dist/em02.js",
+    "em03": "tsc  &&  node  ./dist/em03.js",
+    "em04": "tsc  &&  node  ./dist/em04.js",
+    "em05": "tsc  &&  node  ./dist/em05.js",
+    "em06": "tsc  &&  node  ./dist/em06.js",
+    "em07": "tsc  &&  node  ./dist/em07.js",
+    "em08": "tsc  &&  node  ./dist/em08.js"
+
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}

@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 0.1fr 1fr 1fr 0.1fr 1fr;
+    margin: 5px;
+    overflow: visible;
+}
+
+.poke-container {
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 15rem;
+    height: 95%;
+    border-radius: 8%;
+    margin: 5px;
+    overflow-wrap: break-word;
+}
+
+.cards1, .cards2, .void-cards {
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.void-cards {
+    background-color: lightgray;
+    height: 100%;
+}
+
+.name, .type{
+    text-align: center;
+    font-size: 1.2em;
+    font-family: "Press Start 2P", system-ui;
+    font-style: normal;
+    font-display: border;
+    color: white;
+    inline-size: 25rem;
+    text-shadow:-1px  1px 0 #000,
+                 1px  1px 0 #000,
+                 1px -1px 0 #000,
+                -1px -1px 0 #000;
+    overflow-wrap: break-word;
+    width: 100%;
+}
+
+.image {
+   margin: 0 auto;
+   width: 60%;
+   height: 60%;
+}
+
+h1 {
+    text-align: center;
+}
